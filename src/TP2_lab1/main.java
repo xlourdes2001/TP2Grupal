@@ -28,7 +28,7 @@ public class main {
         p1.getUnreloj().incrementarHora(3);
         System.out.println(p1.getUnreloj().getHora());
         
-        System.out.println("Has hecho : "+r.cuentapasos(2, 2)+ " pasos.");
+        System.out.println("Has hecho : "+r.cuentapasos(2, 2)+ " pasos. Comentario de prueba");
         System.out.println("Has hecho : "+r.cuentapasos(3, 3)+ " pasos.");
         System.out.println("Has hecho : "+r.cuentapasos(33, 30)+ " pasos.");
     }
