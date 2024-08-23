@@ -14,23 +14,34 @@ public class main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Reloj reloj = new Reloj("123","rolex");
+        RelojFit reloj = new RelojFit("123","rolex");
         Persona p1 = new Persona("Lourdes","Escudero",22,1,reloj);
-        RelojFit r= new RelojFit("123","a"); 
+       
         
+        //mostramos dia actual
         System.out.print("El dia es: ");
         p1.getUnreloj().getDia();
+        
+        //incrementamos el dia en uno
+         System.out.print("Dia modificado: ");
         p1.getUnreloj().incrementarDia(1);
         p1.getUnreloj().getDia();
-         p1.getUnreloj().incrementarDia(1);
-        p1.getUnreloj().getDia();
         
+        //mostramos la hora actual
+        System.out.print("La hora es: ");
+         System.out.println(p1.getUnreloj().getHora());
+        
+        //incrementamos la hora actual en 3 horas
         p1.getUnreloj().incrementarHora(3);
+        System.out.print("Hora modificada: ");
         System.out.println(p1.getUnreloj().getHora());
         
-        System.out.println("Has hecho : "+r.cuentapasos(2, 2)+ " pasos. Comentario de prueba");
-        System.out.println("Has hecho : "+r.cuentapasos(3, 3)+ " pasos.");
-        System.out.println("Has hecho : "+r.cuentapasos(33, 30)+ " pasos.");
+        //metodo limpiar pantalla
+        p1.getUnreloj().limpiarPantalla();
+        
+        //probamos los metodos de RelojFit
+        ((RelojFit) p1.getUnreloj()).cuentapasos(2, 2);
+       
     }
     
 }

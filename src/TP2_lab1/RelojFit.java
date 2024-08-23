@@ -13,11 +13,11 @@ public class RelojFit extends Reloj{
         this.coordenadas = new int[] {0,0};
     }
     
-    public int cuentapasos(int x,int y){
+    public void cuentapasos(int x,int y){
         int distancia = (int)Math.sqrt((Math.pow((x-coordenadas[0]), 2))+ Math.pow(y-coordenadas[1], 2));
         coordenadas[0] = x;
         coordenadas[1] = y;
-        return distancia;
+        System.out.println("Has dado "+distancia+" pasos");
         
                 
     }

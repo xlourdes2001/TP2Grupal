@@ -13,7 +13,7 @@ import java.util.Locale;
  * @author Lourdes
  */
 public class Reloj {
-    private LocalDate dia;
+    protected LocalDate dia;
     protected LocalTime hora;
     protected String numSerie;
     protected String modelo;
