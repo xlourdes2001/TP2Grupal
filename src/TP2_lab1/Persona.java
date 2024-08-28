@@ -1,5 +1,6 @@
 //Atributos: nombre,apellido,edad,altura, relojfit
 //metodos: getnombre, get &set edad, hablar,comer, decirhora
+// Trabajo Practico numero 2 - Laboratorio de Programacion 1
 package TP2_lab1;
 
 /**
