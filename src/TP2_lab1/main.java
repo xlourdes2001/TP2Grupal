@@ -23,7 +23,7 @@ public class main {
         p1.getUnreloj().getDia();
         
         //incrementamos el dia en uno
-         System.out.print("Dia modificado: ");
+         System.out.print("El dia siguiente es: ");
         p1.getUnreloj().incrementarDia(1);
         p1.getUnreloj().getDia();
         
@@ -33,7 +33,7 @@ public class main {
         
         //incrementamos la hora actual en 3 horas
         p1.getUnreloj().incrementarHora(3);
-        System.out.print("Hora modificada: ");
+        System.out.print("La hora incrementada en 3 horas es: ");
         System.out.println(p1.getUnreloj().getHora());
         
         //metodo limpiar pantalla
